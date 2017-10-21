@@ -1,0 +1,89 @@
+.footer
+  position relative
+  height 825px
+  color #ffffff
+  text-align center
+  background url("../img/bg__footer.jpg") no-repeat
+  padding-top 250px
+  z-index 1
+  
+  @media screen and (min-width $BREAK-S)
+    height 440px
+    padding 40px 25px
+    padding-bottom 0px
+    background url("../img/bg__footer--320.jpg") no-repeat
+  
+  @media screen and (min-width $BREAK-M)
+    height 585px
+    padding 160px 80px
+    padding-bottom 0px
+    background url("../img/bg__footer--960.jpg") no-repeat
+    background-size 960px
+  
+  @media screen and (min-width $BREAK-L)
+    height 650px
+    padding 160px 180px
+    padding-bottom 0px
+    background url("../img/bg__footer--1320.jpg") no-repeat
+    background-size 1320px
+  
+  &::after
+    content ""
+    position absolute
+    width 163px
+    height 144px
+    top 600px
+    left 975px
+    background url("../img/bg__footer--men.png") no-repeat
+    z-index 10
+    
+    @media screen and (min-width $BREAK-S)
+      top 270px
+      left 165px
+      background url("../img/bg__footer--men-320.png") no-repeat
+    
+    @media screen and (min-width $BREAK-M)
+      top 425px
+      left 492px
+      background url("../img/bg__footer--men-960.png") no-repeat
+    
+    @media screen and (min-width $BREAK-L)
+      top 450px
+      left 660px
+      background url("../img/bg__footer--men.png") no-repeat
+      background-size 120px
+  
+  &__text
+    font-family $FONT-CONTENT, sans-serif
+    font-size 24px
+    line-height 40px
+    margin-bottom 215px
+    
+    @media screen and (min-width $BREAK-S)
+      font-size 14px
+      line-height 18px
+      margin-bottom 40px
+    
+    @media screen and (min-width $BREAK-M)
+      font-size 18px
+      line-height 40px
+      margin-bottom 130px
+    
+    @media screen and (min-width $BREAK-L)
+      margin-bottom 160px
+    
+    &--big
+      font-family $FONT-H2-SLOGAN, sans-serif
+      font-size 132px
+      font-weight 700
+      text-transform uppercase
+      
+      @media screen and (min-width $BREAK-S)
+        font-size 48px
+        line-height 58px
+      
+      @media screen and (min-width $BREAK-M)
+        font-size 105px
+        
+      @media screen and (min-width $BREAK-L)
+        font-size 132px

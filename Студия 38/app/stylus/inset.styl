@@ -1,0 +1,89 @@
+.inset
+  width 1030px
+  height 700px
+  text-align left
+  padding-top 440px
+  padding-left 410px
+  padding-right 360px
+  background url("../img/grass--1.png") no-repeat
+  background-position 1520px 330px
+  
+  @media screen and (min-width $BREAK-S)
+    position relative
+    width 290px
+    height 260px
+    padding 120px 15px
+    margin 0
+    background url("../img/grass--1-top.png") no-repeat
+    background-position 0px 50px
+    
+  @media screen and (min-width $BREAK-M)
+    width 510px
+    height 380px
+    padding-top 280px
+    padding-left 165px
+    padding-right 195px
+    background url("../img/grass--1.png") no-repeat
+    background-position 645px 145px
+    background-size 130px
+  
+  @media screen and (min-width $BREAK-L)
+    width 730px
+    height 535px
+    padding-top 320px
+    padding-left 260px
+    padding-right 240px
+    background-position 990px 280px
+    background-size 140px
+    
+  &__text
+    line-height 42px
+    
+    @media screen and (min-width $BREAK-S)
+      font-size 16px
+      line-height 22px
+      
+    @media screen and (min-width $BREAK-M)
+      font-size 18px
+      line-height 36px
+    
+    @media screen and (min-width $BREAK-L)
+      font-size 24px
+      line-height 48px
+  
+.inset--2
+  background url("../img/grass--2.png") no-repeat
+  background-position 100px 380px
+  
+  @media screen and (min-width $BREAK-S)
+    background url("../img/grass--2-320.png") no-repeat
+    background-position 20px 400px
+    background-size 300px
+    padding-top 90px
+    padding-bottom 210px
+    
+  @media screen and (min-width $BREAK-M)
+    background url("../img/grass--2.png") no-repeat
+    background-position 30px 240px
+    background-size 200px
+    padding-bottom 0px
+    padding-top 280px
+  
+  @media screen and (min-width $BREAK-L) 
+    background-position 50px 310px
+    background-size 260px
+    
+@media screen and (min-width $BREAK-S)
+  .inset--1::after
+    content ""
+    position absolute
+    bottom 150px
+    right 0px
+    width 300px
+    height 23px
+    background url("../img/grass--1-bottom.png") no-repeat
+    
+@media screen and (min-width $BREAK-M)
+  .inset--1::after
+    content ""
+    display none

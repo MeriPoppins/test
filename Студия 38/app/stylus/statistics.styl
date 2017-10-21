@@ -1,0 +1,82 @@
+.statistics
+  display flex
+  width 1800px
+  height 610px
+  color #ffffff
+  background #cc1212 url("../img/slide--1.jpg") no-repeat
+  padding 350px 180px
+  padding-bottom 0px
+  
+  @media screen and (min-width $BREAK-S)
+    width 290px
+    height 820px
+    padding 60px 0px
+    background url("../img/slide--1-320.jpg") no-repeat
+    flex-direction column
+  
+  @media screen and (min-width $BREAK-M)
+    width 760px
+    height 530px
+    padding 90px 55px
+    padding-bottom 0px
+    background #cc1212 url("../img/slide--1.jpg") no-repeat
+    flex-direction column
+  
+  @media screen and (min-width $BREAK-L)
+    width 1140px
+    height 485px
+    padding 325px 45px
+    padding-bottom 0px
+    flex-direction row
+    
+  &__wrap
+    display flex
+    
+    @media screen and (min-width $BREAK-S)
+      flex-direction column
+    
+    @media screen and (min-width $BREAK-M)
+      margin-bottom 60px
+      flex-direction row
+  
+  &__item
+    width 50%
+    color #fffefe
+    text-align left
+    margin-left 90px
+    
+    @media screen and (min-width $BREAK-S)
+      margin-left 25px
+      margin-bottom 40px
+    
+    @media screen and (min-width $BREAK-M)
+      margin-left 90px
+      margin-bottom 0px
+
+    @media screen and (min-width $BREAK-L)
+      margin-left 38px
+    
+    &:first-child
+      margin-left 0px
+      
+      @media screen and (min-width $BREAK-S)
+        margin-left 25px
+        
+      @media screen and (min-width $BREAK-M)
+        margin-left 0px
+    
+    &--number
+      font-size 60px
+      line-height 60px
+      text-transform uppercase
+      color #ffffff
+      margin-top 0px
+      margin-bottom 10px
+      
+      @media screen and (min-width $BREAK-S)
+        font-size 30px
+        line-height 30px
+        
+      @media screen and (min-width $BREAK-M)
+        font-size 60px
+        line-height 60px

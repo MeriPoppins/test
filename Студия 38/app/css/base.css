@@ -1,0 +1,160 @@
+body {
+  width: 1920px;
+  font-family: $FONT-CONTENT, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  color: #342d2d;
+  background-color: #f5f5f5;
+  min-width: $BREAK-S;
+  max-width: $BREAK-LD;
+  margin: 0px auto;
+}
+@media screen and (min-width: $BREAK-S) {
+  body {
+    width: 320px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  body {
+    width: 960px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: $BREAK-L) {
+  body {
+    width: 1320px;
+    font-size: 18px;
+  }
+}
+h1 {
+  font-family: $FONT-H2-SLOGAN, sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #383530;
+  margin: 0px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: $BREAK-S) {
+  h1 {
+    font-size: 30px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: $BREAK-L) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 45px;
+  }
+}
+h2 {
+  font-family: $FONT-H2-SLOGAN, sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #383530;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: $BREAK-S) {
+  h2 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: $BREAK-L) {
+  h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+h3 {
+  font-family: $FONT-H2-SLOGAN, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: $BREAK-S) {
+  h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: $BREAK-L) {
+  h3 {
+    font-size: 24px;
+  }
+}
+p {
+  font-family: $FONT-CONTENT, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+@media screen and (min-width: $BREAK-S) {
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+section {
+  width: 1800px;
+  margin: 0 60px;
+}
+@media screen and (min-width: $BREAK-S) {
+  section {
+    width: 290px;
+    margin: 0 15px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  section {
+    width: 870px;
+    margin: 0 45px;
+  }
+}
+@media screen and (min-width: $BREAK-L) {
+  section {
+    width: 1230px;
+    margin: 0 45px;
+  }
+}

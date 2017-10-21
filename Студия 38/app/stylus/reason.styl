@@ -1,0 +1,91 @@
+.reason
+  padding 0px 180px
+  padding-top 150px
+  
+  @media screen and (min-width $BREAK-S)
+    padding 0px 0px
+    padding-top 75px
+    
+  @media screen and (min-width $BREAK-M)
+    padding 0px 0px
+    padding-top 110px
+  
+  @media screen and (min-width $BREAK-L)
+    padding 0px 0px
+    padding-top 130px
+  
+  &__context--wrap
+    display flex
+    
+    @media screen and (min-width $BREAK-S)
+      flex-direction column
+      
+    @media screen and (min-width $BREAK-M)
+      flex-direction row
+    
+    &:first-child
+      margin-bottom 100px
+    
+  &__context
+    margin-bottom 20px
+    
+    &:nth-child(2n+1)
+      margin-right 120px
+      
+      @media screen and (min-width $BREAK-S)
+        margin-right 0px
+        
+      @media screen and (min-width $BREAK-M)
+        margin-right 30px
+      
+      @media screen and (min-width $BREAK-L)
+        margin-right 90px
+      
+    &--mt
+      margin-top 80px
+      
+      @media screen and (min-width $BREAK-S)
+        margin-top 0px
+        
+      @media screen and (min-width $BREAK-M)
+        margin-top 80px
+      
+    &--img
+      width 660px
+      height 660px
+      
+      @media screen and (min-width $BREAK-S)
+        width 285px
+        height 250px
+    
+      @media screen and (min-width $BREAK-M)
+        width 420px
+        height 420px
+      
+      @media screen and (min-width $BREAK-L)
+        width 570px
+        height 570px
+      
+    &--big-img
+      height 840px
+      
+      @media screen and (min-width $BREAK-S)
+        height 300px
+        
+      @media screen and (min-width $BREAK-M)
+        height 525px
+      
+      @media screen and (min-width $BREAK-L)
+        height 720px
+      
+  &__context--header
+    margin-top 75px
+    
+    @media screen and (min-width $BREAK-S)
+      margin-top 40px
+      
+    @media screen and (min-width $BREAK-M)
+      margin-top 50px
+    
+    @media screen and (min-width $BREAK-L)
+      margin-top 60px

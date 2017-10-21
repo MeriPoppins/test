@@ -1,0 +1,164 @@
+.action {
+  margin: 160px 60px;
+  padding: 0px 180px;
+}
+@media screen and (min-width: $BREAK-S) {
+  .action {
+    margin: 0 15px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  .action {
+    margin: 90px 45px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: $BREAK-L) {
+  .action {
+    margin: 135px 45px;
+    padding: 0;
+  }
+}
+.action__text {
+  font-size: 24px;
+}
+@media screen and (min-width: $BREAK-S) {
+  .action__text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  .action__text {
+    font-size: 24px;
+  }
+}
+.action__items--wrap {
+  display: flex;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: $BREAK-S) {
+  .action__items--wrap {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  .action__items--wrap {
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+}
+.action__item {
+  width: 30%;
+  margin-right: 75px;
+}
+@media screen and (min-width: $BREAK-S) {
+  .action__item {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  .action__item {
+    width: 30%;
+    margin-right: 50px;
+  }
+}
+.action__item:last-child {
+  margin-right: 0px;
+}
+.action__item--header {
+  font-family: $FONT-H2-SLOGAN, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+@media screen and (min-width: $BREAK-S) {
+  .action__item--header {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  .action__item--header {
+    margin-top: 45px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: $BREAK-L) {
+  .action__item--header {
+    margin-top: 45px;
+    font-size: 24px;
+  }
+}
+.action__item--red {
+  color: #cc1212;
+}
+.action__document {
+  text-align: center;
+}
+@media screen and (min-width: $BREAK-S) {
+  .action__document {
+    margin-bottom: 105px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  .action__document {
+    margin-bottom: 0px;
+  }
+}
+.action__document--link {
+  position: relative;
+  width: 445px;
+  height: 70px;
+  font-family: $FONT-CONTENT, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #cc1212;
+  padding: 25px 30px;
+  padding-left: 90px;
+  box-shadow: 0px 10px 40px -5px rgba(204,18,18,0.5);
+}
+@media screen and (min-width: $BREAK-S) {
+  .action__document--link {
+    width: 165px;
+    height: 40px;
+    font-size: 14px;
+    padding: 10px 25px;
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  .action__document--link {
+    width: 445px;
+    height: 70px;
+    font-size: 18px;
+    padding: 25px 30px;
+    padding-left: 90px;
+  }
+}
+.action__document--link::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 30px;
+  left: 35px;
+  background: url("../img/pdf.png") no-repeat;
+}
+@media screen and (min-width: $BREAK-S) {
+  .action__document--link::before {
+    background: url("../img/pdf-320.png") no-repeat;
+    left: 20px;
+  }
+}
+@media screen and (min-width: $BREAK-M) {
+  .action__document--link::before {
+    background: url("../img/pdf.png") no-repeat;
+    left: 35px;
+  }
+}
