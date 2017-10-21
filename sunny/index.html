@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Солнечный</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+</head>
+
+<body>
+  <header>
+    <section class="container">
+      <div class="header__content">
+        <p class="header__content--address">
+        N<br>
+        Цветочный переулок<br>
+        дом 12Б</p>
+        <div class="header__content--logo">
+          <p class="logo-text">Солнечный</p>
+        </div>
+        <div class="header__content--contact">
+          <p class="contact--tel">8 (900) 555-55-55</p>
+          <a class="contact--mail">sunny@mail.ru</a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar navbar-default header-nav" id="wrap">
+        <div class="container-fluid container-navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed header__navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav header-nav">
+              <li class="header-nav__item"><a class="header-nav__link" href="#features">О нас</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#number">Наши номера</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#comment">Отзывы</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#booking">Бронирование</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#address">Как доехать</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <section class="slider container">
+        <ul class="bxslider slider1 slider__wrap">
+          <li class="slider__item">
+            <p class="slider__item--text text--1">"Солнечный" - этo приветливый персонал</p>
+            <img src="img/slide-1.jpg">
+          </li>
+          <li class="slider__item">
+            <p class="slider__item--text text--2">"Солнечный" - это просторные холлы</p>
+            <img src="img/slide-2.jpg">
+          </li>
+          <li class="slider__item">
+            <p class="slider__item--text text--3">"Солнечный" - это уютные номера</p>
+            <img src="img/slide-3.jpg">
+          </li>
+        </ul>
+      </section>
+  </header>
+
+  <main>
+
+    <section class="features container page-section" id="features">
+      <h1 class="section-header--h1">О нас</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="features__item features__item--1">
+            <h3 class="section-header--h3 features--h3">Любовь к гостям</h3>
+            <p class="features__item--content">Мы с душой подходим к своей работе, это больше, чем формальное обслуживание.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="features__item features__item--2">
+            <h3 class="section-header--h3 features--h3">Нам доверяют</h3>
+            <p class="features__item--content">У нас останавливаются большие группы спортсменов, детей, артистов, также большое количество постоянных гостей.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="features__item features__item--3">
+            <h3 class="section-header--h3 features--h3">Вид из окон</h3>
+            <p class="features__item--content">Из окон номеров и холлов отеля открывается великолепный панорамный вид на город.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--decor container">
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+    </section>
+
+    <section class="number container page-section" id="number">
+      <h1 class="section-header--h1">Наши номера</h1>
+      <div class="number__items">
+        <div class="number__item">
+          <h3 class="section-header--h3 number--h3">Люкс</h3>
+          <img class="number__img" src="img/number-1.png">
+          <img src="img/lens.png" class="lens number__lens">
+          <p class="number__item--text">Просторный двухкомнатный номер.<br>
+          Гостиная с диваном и большим столом.<br>
+          Спальня с двуспальной кроватью.<br>
+          В номере: кондиционер, плазма-телевизор, телефон, большой холодильник, посуда.<br>
+          Мебель: прикроватные тумбы, шкаф для одежды, рабочий стол, комод, кресло.<br>
+          Дополнительно: интернет, доставка обедов и ужинов, вызов такси, заказ билетов.<br>
+          <b>Стоимость: 3000 руб.</b></p>
+          <button class="btn number--bnt" type="button">Забронировать</button>
+        </div>
+        <div class="number__item">
+          <h3 class="section-header--h3 number--h3">Улучшенный однокомнатный</h3>
+          <img class="number__img" src="img/number-2.png">
+          <img src="img/lens.png" class="lens">
+          <p class="number__item--text">Просторная комната с двуспальной или двумя стандартными кроватями.<br>
+          В номере: кондиционер, телевизор, телефон, холодильник, посуда.<br>
+          Мебель: прикроватные тумбочки, шкаф для одежды, тумба под чемодан, стол, стул и кресло.<br>
+          <b>Стоимость: 2500 руб.</b></p>
+          <button class="btn number--bnt" type="button">Забронировать</button>
+        </div>
+      </div>
+      <div class="number__items">
+        <div class="number__item">
+          <h3 class="section-header--h3 number--h3">Стандарт отднокомнатный</h3>
+          <img class="number__img" src="img/number-1.png">
+          <img src="img/lens.png" class="lens">
+          <p class="number__item--text">В комнате – две стандартные кровати.<br>
+          В номере: кондиционер, телевизор, телефон, холодильник, посуда.<br>
+          Мебель: прикроватные тумбочки, шкаф для одежды, стол и кресло.<br>
+          <b>Стоимость: 2000 руб.</b></p>
+          <button class="btn number--bnt" type="button">Забронировать</button>
+        </div>
+        <div class="number__item">
+          <h3 class="section-header--h3 number--h3">Стандарт в блоке</h3>
+          <img class="number__img" src="img/number-2.png">
+          <img src="img/lens.png" class="lens">
+          <p class="number__item--text">В комнате – одна двуспальная или две стандартные кровати.<br>
+          В номере: кондиционер, телевизор, телефон, холодильник, посуда.<br>
+          Мебель: прикроватные тумбочки, шкаф для одежды, стол и кресло.<br>
+          <b>Стоимость: 1000 руб.</b></p>
+          <button class="btn number--bnt" type="button">Забронировать</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--decor container">
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+    </section>
+
+    <section class="comment container page-section" id="comment">
+      <h1 class="section-header--h1">Отзывы</h1>
+      <ul class="bxslider slider2 slider__wrap">
+        <li class="comment__slider--item">
+          <div class="item__client">
+            <img class="item__client--foto" src="img/306114.jpg">
+            <p class="item__client--name">Тимур, 28 лет</p>
+          </div>
+          <div class="item__coment">
+            <p class="item__coment--text">Я останавливался в гостинице Солнечный прошлой осенью и остался полностью довольным и номером, и персоналом</p>
+            <p class="item__coment--date">29 ноября 2016</p>
+          </div>
+        </li>
+        <li class="comment__slider--item">
+          <div class="item__client">
+            <img class="item__client--foto" src="img/i.jpg">
+            <p class="item__client--name">Ева, 26 лет</p>
+          </div>
+          <div class="item__coment">
+            <p class="item__coment--text">Выражаю огромную благодарность персоналу и администрации гостиницы. Спасибо что разрешили разместиться вместе с моим котом Мартином. Выражаю огромную благодарность персоналу и администрации гостиницы. Спасибо что разрешили разместиться вместе с моим котом Мартином</p>
+            <p class="item__coment--date">25 июня 2016</p>
+          </div>
+        </li>
+        <li class="comment__slider--item">
+          <div class="item__client">
+            <img class="item__client--foto" src="img/i.jpg">
+            <p class="item__client--name">Ева, 26 лет</p>
+          </div>
+          <div class="item__coment">
+            <p class="item__coment--text">Выражаю огромную благодарность персоналу и администрации гостиницы. Спасибо что разрешили разместиться вместе с моим котом Мартином
+            </p>
+            <p class="item__coment--date">25 июня 2016</p>
+          </div>
+        </li>
+        <li class="comment__slider--item">
+          <div class="item__client">
+            <img class="item__client--foto" src="img/306114.jpg">
+            <p class="item__client--name">Тимур, 28 лет</p>
+          </div>
+          <div class="item__coment">
+            <p class="item__coment--text">Я останавливался в гостинице Солнечный прошлой осенью и остался полностью довольным и номером, и персоналом</p>
+            <p class="item__coment--date">29 ноября 2016</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section--decor container">
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+    </section>
+
+    <section class="booking container page-section" id="booking">
+      <h1 class="section-header--h1">Бронирование</h1>
+      <p class="booking__content">Забронировать номер очень просто</p>
+      <p class="booking__content">Всего лишь заполнить форму</p>
+      <form class="booking__form" method="post">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="input__name">Ваше имя</p>
+            <input type="text" id="inputName" class="booking__input" placeholder="Иван Иванов">
+          </div>
+          <div class="col-md-6">
+            <p class="input__name">Ваш телефон</p>
+            <input type="tel" id="inputTel" class="booking__input" placeholder="+7 (900) 999-99-99">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="input__name">Дата въезда</p>
+            <input type="text" id="inputDate" class="booking__input" placeholder="ДД.ММ.ГГГГ">
+          </div>
+          <div class="col-md-6">
+            <p class="input__name">Дата выезда</p>
+            <input type="text" id="inputDate" class="booking__input" placeholder="ДД.ММ.ГГГГ">
+          </div>
+        </div>
+        <textarea rows="3" class="booking__input" placeholder="Ваши пожелания"></textarea>
+        <button type="submit" class="btn booking--bnt">Забронировать</button>
+      </form>
+    </section>
+
+    <section class="section--decor container">
+      <div class="line"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+    </section>
+
+    <section class="address container page-section" id="address">
+      <h1 class="section-header--h1">Как до нас доехать</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Мы располагаемся по адресу ул.Цветочная дом 12Б</p><br>
+          <p>Рядом с гостинице располагаются атобусные остановки маршрутов 8, 11 и 45. А так же станция метро Лазурная.</p>
+        </div>
+        <div class="col-md-6 maps-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1593.373495405189!2d50.81152075817151!3d61.64575124686982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43f7d4bc4c618a89%3A0x95350e553ce504c6!2z0KHRgtCw0L3RhtC40L7QvdC90LDRjyDRg9C7LiwgMTEwLCDQodGL0LrRgtGL0LLQutCw0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwgMTY3MDAy!5e0!3m2!1sru!2sru!4v1501934377861" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer__wrap">
+    <div class="footer__content">
+      <div class="footer__content--contact">
+        <p class="footer__content--tel">8 (900) 555-55-55</p>
+        <a class="footer__link footer__content--mail" href="#">sunny@mail.ru</a>
+      </div>
+
+      <div class="footer__content--social">
+        <a class="social-bnt social-bnt-vk" href="#">Вконтакте</a>
+        <a class="social-bnt social-bnt-fb" href="#">Фейсбук</a>
+        <a class="social-bnt social-bnt-inst" href="#">Инстаграмм</a>
+      </div>
+
+      <div class="footer__content--copyright">
+        <p>Разработка сайта</p>
+        <a class="footer__link" href="#">"MeriPoppins"</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-popap">
+    <button class="modal-popap__close" type="button">close</button>
+    <p class="modal-popap__text">Спасибо!<br>Ваша заявка отправлена.</p>
+  </div>
+
+  <div class="modal-popap__number">
+    <button class="modal-popap__close modal-popap__close--number" type="button">close</button>
+    <ul class="bxslider slider3">
+      <li class="modal-popap__number--item"><img src="img/number--big.jpg"></li>
+      <li class="modal-popap__number--item"><img src="img/number--big.jpg"></li>
+      <li class="modal-popap__number--item"><img src="img/number--big.jpg"></li>
+    </ul>
+  </div>
+
+  <div class="modal-popap__form">
+      <button class="modal-popap__close modal-popap__form--close" type="button">close</button>
+      <h1 class="section-header--h1 popap--h1">Бронирование</h1>
+      <form class="popap-booking__form" method="post">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="input__name">Ваше имя</p>
+            <input type="text" id="inputName" class="booking__input" placeholder="Иван Иванов">
+          </div>
+          <div class="col-md-6">
+            <p class="input__name">Ваш телефон</p>
+            <input type="tel" id="inputTel" class="booking__input" placeholder="+7 (900) 999-99-99">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="input__name">Дата въезда</p>
+            <input type="text" id="inputDate" class="booking__input" placeholder="ДД.ММ.ГГГГ">
+          </div>
+          <div class="col-md-6">
+            <p class="input__name">Дата выезда</p>
+            <input type="text" id="inputDate" class="booking__input" placeholder="ДД.ММ.ГГГГ">
+          </div>
+        </div>
+        <textarea rows="3" class="booking__input" placeholder="Ваши пожелания"></textarea>
+        <button type="submit" class="btn booking--bnt popap--btn">Забронировать</button>
+      </form>
+    </div>
+
+  <div class="modal-overlay"></div>
+
+  <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
