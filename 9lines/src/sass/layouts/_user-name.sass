@@ -1,0 +1,31 @@
+.user-name
+  min-height: rem-calc(250)
+  padding-top: rem-calc(10)
+
+  &__foto
+    padding-right: rem-calc(20)
+    padding-top: rem-calc(10)
+
+  &__data
+    position: relative
+
+    &::after
+      content: ""
+      bottom: rem-calc(10)
+      right: rem-calc(-10)
+      width: rem-calc(184)
+      height: rem-calc(166)
+      position: absolute
+      z-index: 10
+      background: url("../images/_user-name__bg.png") no-repeat
+
+  &__input[type="text"]
+    z-index: 1
+    @include fonts-settings-body
+    border: none
+    box-shadow: none
+    border-bottom: rem-calc(2) solid #333333
+    padding-left: rem-calc(0)
+
+    &:focus
+      padding-left: rem-calc(8)

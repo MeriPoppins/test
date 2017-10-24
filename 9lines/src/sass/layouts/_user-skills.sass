@@ -1,0 +1,44 @@
+.user-skills
+  min-height: rem-calc(220)
+  padding-top: rem-calc(30)
+
+  p
+    @include fonts-settings-p
+    margin-bottom: rem-calc(10)
+  
+  label
+    position: relative
+    margin-left: rem-calc(-15)
+    margin-bottom: rem-calc(35)
+    padding-left: rem-calc(25)
+
+  &__input
+    display: none
+
+    &:checked + .user-skills__checkbox::before
+      content: ""
+      display: block
+      position: absolute
+      width: rem-calc(18)
+      height: rem-calc(18)
+      background: #0093d7 url("../images/checkbox.png") no-repeat
+      background-position: rem-calc(2)
+      border-radius: rem-calc(5)
+      margin-bottom: rem-calc(35)
+      cursor: pointer
+
+
+  &__checkbox
+    position: absolute
+    left: rem-calc(0)
+    top: rem-calc(3)
+    width: rem-calc(18)
+    height: rem-calc(18)
+    background-color: #eeeeee
+    border-radius: rem-calc(5)
+    margin-bottom: rem-calc(35)
+    cursor: pointer
+
+  &__label
+    @include fonts-settings-body
+    cursor: pointer

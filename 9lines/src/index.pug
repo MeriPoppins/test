@@ -1,0 +1,16 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('MeryPoppins')
+    include pug/styles.pug
+  body.grid-container
+
+    include pug/blocks/user-name.pug
+    include pug/blocks/user-skills.pug
+    include pug/blocks/user-js.pug
+
+    include pug/script.pug

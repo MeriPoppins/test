@@ -1,0 +1,27 @@
+.user-js
+  min-height: rem-calc(195)
+  padding-top: rem-calc(55)
+
+  &__img
+    position: relative
+
+    .user-js__arrow
+      position: absolute
+      top: rem-calc(112)
+      left: rem-calc(70)
+      -webkit-transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      transition-property: transform
+      transform-origin: 80% 55%
+      transform: rotate(0deg)
+      
+  p
+  @include fonts-settings-p
+  margin-bottom: rem-calc(0)
+
+  &__level
+    @include fonts-settings-p
+    font-size: rem-calc(50)
+    color: #0093d7

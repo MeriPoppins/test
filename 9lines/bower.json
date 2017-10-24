@@ -1,0 +1,21 @@
+{
+  "name": "9lines",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "MeriPoppins <eva_mp@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation-sites": "^6.4.3"
+  }
+}

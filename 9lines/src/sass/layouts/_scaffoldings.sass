@@ -1,0 +1,18 @@
+@import "../helpers/_mixins.sass"
+
+body
+  max-width: rem-calc(660)
+  @include fonts-settings-body
+  background: $body-bg-color
+  padding: rem-calc(0)
+
+section
+  padding: rem-calc(0) rem-calc(20)
+  border-bottom: rem-calc(2) solid #f0f0f0
+
+  &.user-js
+    border-bottom: none
+
+p
+  padding: rem-calc(0)
+  margin: rem-calc(0)
