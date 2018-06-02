@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>MyTour</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/raty.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content container">
+        <a class="logo__link">
+          <img class="logo__link--img" src="img/logo.png">
+        </a>
+        <ul class="nav">
+          <li class="nav__item">
+            <a class="nav__item--link" href="#">Моя лента</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link active" href="#">Интересы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link" href="#">Направления</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link" href="#">Подбор тура</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item--link" href="#">Заявка</a>
+          </li>
+        </ul>
+        <button class="menu__button"></button>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="content container">
+        <h1>Настройка интересов</h1>
+        <div class="page__content">
+          <form>
+            <div class="tab-box">
+              <ul class="tab-nav">
+                <li>
+                  <a href="#1">Подборка Васи</a>
+                </li>
+                <li>
+                  <a href="#2">Подборка 1</a>
+                </li>
+                <li>
+                  <a href="#3">Подборка 2</a>
+                </li>
+              </ul>
+              <div class="tab-panels">
+                <div class="form__item" id="1">
+                  <button class="submit__button" type="submit">Cмотреть результаты</button>
+                  <label class="label label--top">
+                    <p class="label__text">Название подборки</p>
+                    <input class="input" type="text" name="">
+                  </label>
+                  <label class="label label--top label--city">
+                    <p class="label__text">Ваш город</p>
+                    <select class="select select__city">
+                      <option>Санкт-Петербург</option>
+                      <option>Москва</option>
+                      <option>Сыктывкар</option>
+                      <option>Киров</option>
+                      <option>Пермь</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <div class="country">
+                    <p class="country__header">Вы можете задать несколько стран или регионов для одной подборки</p>
+                    <div class="country__result">
+                      <div class="country__result--region">Европа</div>
+                      <div class="country__result--country country__name" id="france">
+                        Франция
+                        <button class="close"></button>
+                      </div>
+                      <div class="country__result--country country__name" id="austria">
+                        Австрия
+                        <button class="close"></button>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="button__wrap">
+                      <button class="button region__button">Добавить регион</button>
+                      <button class="button country__button">Добавить страны</button>
+                    </div>
+                  </div>
+                  <label class="label data">
+                    <p class="label__text">Дата вылета</p>
+                    <input class="input data__input" type="text">
+                  </label>
+                  <label class="label days">
+                    <p class="label__text">На сколько</p>
+                    <select class="select days__input">
+                      <option>7 - 14 ночей</option>
+                      <option>14 - 28 ночей</option>
+                    </select>
+                  </label>
+                  <label class="label numbers">
+                    <p class="label__text">Количество гостей</p>
+                    <input class="input numbers__input" type="text">
+                  </label>
+                  <label class="label price">
+                    <p class="label__text">Стоимость тура</p>
+                    <select class="select price__input">
+                      <option>50 000 Р - 150 000 Р</option>
+                      <option>150 000 - 200 000 Р</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <label class="label stars">
+                    <p class="label__text">Категория отелей от</p>
+                    <div class="rate2 input stars__input"></div>
+                  </label>
+                  <label class="label rating">
+                    <p class="label__text">Рейтинг TopHotels</p>
+                    <div class="select rating__input">
+                      <p>Не ниже</p>
+                      <select>
+                        <option>3.0</option>
+                        <option>4.0</option>
+                        <option>5.0</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="label food">
+                    <p class="label__text">Тип питания</p>
+                    <select class="select food__input">
+                      <option>Любой</option>
+                      <option>Все включено</option>
+                    </select>
+                  </label>
+                  <label class="label place">
+                    <p class="label__text">Расположение</p>
+                    <select class="select place__input">
+                      <option>Пляжные, 1-я линия</option>
+                      <option>Пляжные, 2-я линия</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <button class="remove__button">Удалить подборку</button>
+                </div>
+                <div class="form__item" id="2">
+                  <button class="submit__button" type="submit">Cмотреть результаты</button>
+                  <label class="label label--top">
+                    <p class="label__text">Название подборки</p>
+                    <input class="input" type="text" name="">
+                  </label>
+                  <label class="label label--top label--city">
+                    <p class="label__text">Ваш город</p>
+                    <select class="select select__city">
+                      <option>Санкт-Петербург</option>
+                      <option>Москва</option>
+                      <option>Сыктывкар</option>
+                      <option>Киров</option>
+                      <option>Пермь</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <div class="country">
+                    <p class="country__header">Вы можете задать несколько стран или регионов для одной подборки</p>
+                    <div class="country__result">
+                      <div class="country__result--region">Юго-Восточная Азия</div>
+                      <div class="country__result--country country__name" id="indonesian">
+                        Индонезия
+                        <button class="close"></button>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="button__wrap">
+                      <button class="button region__button">Добавить регион</button>
+                      <button class="button country__button">Добавить страны</button>
+                    </div>
+                  </div>
+                  <label class="label data">
+                    <p class="label__text">Дата вылета</p>
+                    <input class="input data__input" type="text">
+                  </label>
+                  <label class="label days">
+                    <p class="label__text">На сколько</p>
+                    <select class="select days__input">
+                      <option>7 - 14 ночей</option>
+                      <option>14 - 28 ночей</option>
+                    </select>
+                  </label>
+                  <label class="label numbers">
+                    <p class="label__text">Количество гостей</p>
+                    <input class="input numbers__input" type="text">
+                  </label>
+                  <label class="label price">
+                    <p class="label__text">Стоимость тура</p>
+                    <select class="select price__input">
+                      <option>50 000 Р - 150 000 Р</option>
+                      <option>150 000 - 200 000 Р</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <label class="label stars">
+                    <p class="label__text">Категория отелей от</p>
+                    <div class="rate2 input stars__input"></div>
+                  </label>
+                  <label class="label rating">
+                    <p class="label__text">Рейтинг TopHotels</p>
+                    <div class="select rating__input">
+                      <p>Не ниже</p>
+                      <select>
+                        <option>3.0</option>
+                        <option>4.0</option>
+                        <option>5.0</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="label food">
+                    <p class="label__text">Тип питания</p>
+                    <select class="select food__input">
+                      <option>Любой</option>
+                      <option>Все включено</option>
+                    </select>
+                  </label>
+                  <label class="label place">
+                    <p class="label__text">Расположение</p>
+                    <select class="select place__input">
+                      <option>Пляжные, 1-я линия</option>
+                      <option>Пляжные, 2-я линия</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <button class="remove__button">Удалить подборку</button>
+                </div>
+                <div class="form__item" id="3">
+                  <button class="submit__button" type="submit">Cмотреть результаты</button>
+                  <label class="label label--top">
+                    <p class="label__text">Название подборки</p>
+                    <input class="input" type="text" name="">
+                  </label>
+                  <label class="label label--top label--city">
+                    <p class="label__text">Ваш город</p>
+                    <select class="select select__city">
+                      <option>Санкт-Петербург</option>
+                      <option>Москва</option>
+                      <option>Сыктывкар</option>
+                      <option>Киров</option>
+                      <option>Пермь</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <div class="country">
+                    <p class="country__header">
+                      Вы можете задать несколько стран или регионов для одной подборки
+                    </p>
+                    <div class="country__result">
+                      <div class="country__result--region">Африка</div>
+                      <div class="country__result--country country__name" id="tunisian">
+                        Тунис
+                        <button class="close"></button>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="button__wrap">
+                      <button class="button region__button">Добавить регион</button>
+                      <button class="button country__button">Добавить страны</button>
+                    </div>
+                  </div>
+                  <label class="label data">
+                    <p class="label__text">Дата вылета</p>
+                    <input class="input data__input" type="text">
+                  </label>
+                  <label class="label days">
+                    <p class="label__text">На сколько</p>
+                    <select class="select days__input">
+                      <option>7 - 14 ночей</option>
+                      <option>14 - 28 ночей</option>
+                    </select>
+                  </label>
+                  <label class="label numbers">
+                    <p class="label__text">Количество гостей</p>
+                    <input class="input numbers__input" type="text">
+                  </label>
+                  <label class="label price">
+                    <p class="label__text">Стоимость тура</p>
+                    <select class="select price__input">
+                      <option>50 000 Р - 150 000 Р</option>
+                      <option>150 000 - 200 000 Р</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <label class="label stars">
+                    <p class="label__text">Категория отелей от</p>
+                    <div class="rate2 input stars__input"></div>
+                  </label>
+                  <label class="label rating">
+                    <p class="label__text">Рейтинг TopHotels</p>
+                    <div class="select rating__input">
+                      <p>Не ниже</p>
+                      <select>
+                        <option>3.0</option>
+                        <option>4.0</option>
+                        <option>5.0</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="label food">
+                    <p class="label__text">Тип питания</p>
+                    <select class="select food__input">
+                      <option>Любой</option>
+                      <option>Все включено</option>
+                    </select>
+                  </label>
+                  <label class="label place">
+                    <p class="label__text">Расположение</p>
+                    <select class="select place__input">
+                      <option>Пляжные, 1-я линия</option>
+                      <option>Пляжные, 2-я линия</option>
+                    </select>
+                  </label>
+                  <div class="clear"></div>
+                  <button class="remove__button">Удалить подборку</button>
+                </div>
+              </div>
+              <button class="add__button">Добавить подборку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container"> 
+          <h3 class="footer__header">Туристический проект</h3>
+          <div class="footer__content">
+            <div class="footer__content--item">
+              <p class="footer__content--text">
+                Москва, 1-й Щипковый переулок, д.1
+              </p>
+              <a class="footer__content--text" href="#">Показать на карте</a>
+            </div>
+            <div class="footer__content--item">
+              <p class="footer__content--text">
+                Время работы офиса:<br>
+                Будни 10:00 &mdash; 21:00<br>
+                Выходные и праздники 11:00 &mdash; 17:00
+              </p>
+            </div>
+            <div class="footer__content--item">
+              <a class="tel__number" href="tel:84955855555">+7 495 585 55 55</a><br>
+              <button class="feedback__button footer__content--text">Обратная связь</button>
+            </div>
+            <div class="footer__content--item">
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__item--link social__item--link-vk" href="">ВКонтакте</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__item--link social__item--link-fb" href="">Facebook</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__item--link social__item--link-inst" href="">Instagram</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__item--link social__item--link-ok" href="">Одноклассники</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer__content--text">
+              Разработано командой <a href="#">TourAdmin</a> &#169; 2017
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

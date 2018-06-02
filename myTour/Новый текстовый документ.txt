@@ -1,0 +1,10 @@
+.sprite {display: inline-block; vertical-align: middle;}
+.sprite {background-image: url(sprites/e08581b2674680722b1318b9bb12adba.png); background-position: left center; background-repeat: no-repeat;}
+.sprite.cancel_png {background-position: 0 0; width: 14px; height: 14px;}
+.sprite.error__1__png {background-position: 0 -54px; width: 16px; height: 17px;}
+.sprite.Image_6_png {background-position: 0 -111px; width: 16px; height: 13px;}
+.sprite.Image_7_png {background-position: 0 -164px; width: 16px; height: 13px;}
+.sprite.Image_8_png {background-position: 0 -217px; width: 16px; height: 13px;}
+.sprite.plus__1__2_png {background-position: 0 -270px; width: 16px; height: 17px;}
+.sprite.rating_png {background-position: 0 -327px; width: 13px; height: 10px;}
+.sprite.arrow_2_png {background-position: 0 -377px; width: 16px; height: 16px;}

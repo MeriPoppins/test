@@ -1,0 +1,25 @@
+/*** Материал подготовлен сайтом roothelp.ru ***/
+
+#content{
+	width: 420px;
+	margin:50px auto 0px;
+}
+
+/*** Рейтинг, звездочки | JQuery ***/
+
+
+.rate1, .rate2, .rate3{
+	margin: 20px;
+}
+
+.name{
+	margin-left: 20px;
+}
+
+span{
+	font-weight: bold;
+}
+
+p{
+	font-size: 13px;
+}
